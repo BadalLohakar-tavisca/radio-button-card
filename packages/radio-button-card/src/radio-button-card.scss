@@ -1,0 +1,22 @@
+@import './radio-button-card-map.scss';
+.radio-button-card-wrapper {
+    width: 100%;
+    min-height: 52px;
+    background-color: var(--global-bg);
+    border: 1px solid var(--secondary);
+    color: var(--secondary-text);
+    border-radius: 5px;
+    padding: 16px 8px 16px 8px;
+    box-sizing: border-box;
+    input[type="radio"] {
+        display: inline-block;
+        vertical-align: top;
+        margin: 1px 3px 0px 0px;
+    }
+    .checked-content {
+        display: none;
+        margin-top: 16px;
+        height: fit-content;
+        background-color: var(--neutral);
+    }
+}

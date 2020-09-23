@@ -15,7 +15,7 @@ export default class OrxeRadioButtonCard extends LitElement {
    */
   render() {
     return html`
-      <div class="radio-button-card-wrapper caption" >
+      <div class="radio-button-card-wrapper" >
     
           <div>
               <input type="radio" id="radioChecked" 

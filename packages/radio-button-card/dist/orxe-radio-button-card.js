@@ -18,15 +18,16 @@ let OrxeRadioButtonCard = class OrxeRadioButtonCard extends LitElement {
     }
     render() {
         return html `
-      <div class="radio-button-card-wrapper">
+      <div class="radio-button-card-wrapper caption" >
     
           <div>
               <input type="radio" id="radioChecked" 
+              data-testid="radio-button-card-radio-input"
               .value=${this.radioValue}
                @click=${() => this.radioButtonClicked()}>
               <lable>${this.radioLable}</lable>
           </div>
-          <div class="checked-content">
+          <div data-testid="radio-button-card-checked-content"  class="checked-content">
              <slot></slot>
           </div>
       
@@ -66,7 +67,7 @@ __decorate([
 ], OrxeRadioButtonCard.prototype, "radioValue", void 0);
 __decorate([
     property(),
-    __metadata("design:type", Object)
+    __metadata("design:type", Boolean)
 ], OrxeRadioButtonCard.prototype, "radioCheckedFlag", void 0);
 OrxeRadioButtonCard = __decorate([
     customElement('orxe-radio-button-card')
